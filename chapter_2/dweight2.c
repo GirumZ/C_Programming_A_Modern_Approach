@@ -4,6 +4,8 @@
  * Return: 0 on success
  */
 
+#define INCHES_PER_POUND 166
+
 int main(void)
 {
 	int height, length, width, volume, weight;
@@ -15,7 +17,7 @@ int main(void)
 	printf("Enter width of box: ");
 	scanf("%d", &width);
 	volume = height * length * width;
-	weight = (volume + 165) / 166;
+	weight = (volume + INCHES_PER_POUND - 1) / INCHES_PER_POUND;
 
 	printf("Dimentions: %dx%dx%d\n", length, width, height);
 	printf("Volume (cubic inches): %d\n", volume);
