@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints a date in a specific format
- * Return: 0 on success
+ * Return: 0 for success
  */
 
 int main(void)
